@@ -1,0 +1,20 @@
+{
+  "name": "project-blockchain",
+  "version": "1.0.0",
+  "description": "api-rest beneficios sociales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blockchain"
+  ],
+  "author": "Fernando,Micaela,Kenny",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "express": "^4.17.1",
+    "joi": "^17.3.0"
+  },
+  "devDependencies": {}
+}
