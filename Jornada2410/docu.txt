@@ -1,0 +1,91 @@
+Atributos
+
+Actor: Owner 
+Nombre: String  (MIDES) Ej
+RUT:
+Direccion: String
+walletoken: Numeric
+
+Actor : Beneficiario
+Documento: Numeric
+Nombre Apellido
+Direccion
+Departamento
+Status : bool
+walletoken:
+telefono:
+
+Actor : Comercio
+Nombre:
+RUT:
+Direccion
+status: bool
+walletoken:
+Numero de Cuenta:
+
+Metodos
+
+Crear Dinero:
+tokencreate:200 
+fecha:date()
+
+AsignarBeneficio
+request input
+Documento:
+TokenAsignar:
+Fecha:
+Codigo:
+Validate Datos
+Documento
+Exepciones
+Si tokenasigna > 1 Error solo se permite 1 asignacion
+Si documento y Nombre  no coinden Error Valide los datos ingresados
+
+CanjeBeneficio
+Request input
+Documento:
+Codigo:
+Validate Datos
+Documento
+Codigo
+
+Exepciones
+Si walletoken <1 error no tiene token disponible
+Si documento y Codigo no coinden Error Valide los datos ingresados
+
+Pago Comercio
+request input
+RUT:
+tokenchange:
+Numero de Cuenta:
+Validate Datos
+RUT
+Exepciones
+Si walletoken <Tokenchange error no tiene token disponible
+Si RUT no coinden Error Valide los datos ingresados
+
+
+ConsultarWallet
+RUT o Documento
+Validar
+RUT o Documento
+
+Opcional
+Createbeneficiario
+request input
+Documento: Numeric
+Nombre Apellido
+Direccion
+Departamento
+Status : bool
+walletoken:
+telefono:
+
+CreateComercio
+request input
+Nombre:
+RUT:
+Direccion
+status: bool
+walletoken:
+Numero de Cuenta:
