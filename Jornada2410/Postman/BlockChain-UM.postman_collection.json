@@ -1,0 +1,458 @@
+{
+	"info": {
+		"_postman_id": "fb79481e-8a2d-4d2c-a0f2-e13d31ee1c4f",
+		"name": "BlockChain-UM",
+		"description": "Proyecto Final BlockChain asignacion de beneficios sociales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consulta-Documento",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/beneficiarios/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"beneficiarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta-Documento MongoDB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/beneficiarios/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"beneficiarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear-Beneficiario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Alice\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/beneficiarios",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"beneficiarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear-Beneficiario MongoDB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Levy Grau",
+							"type": "text"
+						},
+						{
+							"key": "documento",
+							"value": "62432538",
+							"type": "text"
+						},
+						{
+							"key": "departamento",
+							"value": "Montevideo",
+							"type": "text"
+						},
+						{
+							"key": "direccion",
+							"value": "Benito Blanco 2323",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "093934824",
+							"type": "text"
+						},
+						{
+							"key": "walletoken",
+							"value": "0",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/beneficiario",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"beneficiario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-Beneficio MongoDB",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Levy Grau",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "documento",
+							"value": "62432538",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "departamento",
+							"value": "Montevideo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "direccion",
+							"value": "Benito Blanco 2323",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "telefono",
+							"value": "093934824",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "walletoken",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/beneficiario/62432538",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"beneficiario",
+						"62432538"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Comercio MongoDB",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Levy Grau",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "documento",
+							"value": "62432538",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "departamento",
+							"value": "Montevideo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "direccion",
+							"value": "Benito Blanco 2323",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "telefono",
+							"value": "093934824",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "walletoken",
+							"value": "100",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/comercio/52836095524550",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comercio",
+						"52836095524550"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear-Comercio MongoDB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "la chacra",
+							"type": "text"
+						},
+						{
+							"key": "rut",
+							"value": "5283609552455",
+							"type": "text"
+						},
+						{
+							"key": "departamento",
+							"value": "Montevideo",
+							"type": "text"
+						},
+						{
+							"key": "direccion",
+							"value": "la heras 1234",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "0500888282",
+							"type": "text"
+						},
+						{
+							"key": "walletoken",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "numcuenta",
+							"value": "17281728127812",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/comercio",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comercio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear-Ente MongoDB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Fundacion Mides",
+							"type": "text"
+						},
+						{
+							"key": "departamento",
+							"value": "Montevideo",
+							"type": "text"
+						},
+						{
+							"key": "direccion",
+							"value": "Cuareim 798",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "08001234",
+							"type": "text"
+						},
+						{
+							"key": "walletoken",
+							"value": "100",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/ente",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/api/beneficiarios/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Saul\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/beneficiarios/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"beneficiarios",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
