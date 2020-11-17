@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Beneficiarios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="conect2.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+         <br> </br>
+          <center><h1>Beneficiarios</h1></center>
+          <hr>
+          <form id="create">
+            <br> </br>
+            <h2>Crear Beneficiario</h2>
+            <div class="form-group">
+              <label for="name">Nombre:</label>
+              <input id="nombre" type="text" class="form-control"></input>
+              <label for="name">Documento:</label>
+              <input id="rut" type="text" class="form-control"></input>
+              <label for="name">Departamento:</label>
+              <input id="departamento" type="text" class="form-control"></input>
+              <label for="name">Direccion:</label>
+              <input id="direccion" type="text" class="form-control"></input>
+              <label for="name">Telefono:</label>
+              <input id="telefono" type="text" class="form-control"></input>
+              <label for="name">Address_Beneficiario:</label>
+              <input id="address" type="text" class="form-control"></input>
+            </div>
+            
+            <button id="enviar" onclick="crear(this)" type="button" class="btn btn-primary">Enviar</button>
+            <p id="create-result"></p>
+          </form>
+ 
+          <hr>
+          <hr>
+          <br>
+          <form id="read">
+            <h2>Consultar Beneficiario</h2>
+            <div class="form-group">
+              <label for="read-id">Address_Beneficiario:</label>
+              <input id="read-address" type="text" class="form-control"></input>
+            </div>
+            <button  type="button"  onclick="consutar(this)" class="btn btn-primary">Enviar</button>
+            <br>
+            <br>
+            <div>Nombre: <span id="cardnombre"></span></div>
+            <div>Documento: <span id="cardrut"></span></div>
+            <div>Estatus: <span id="cardestatus"></span></div>
+          </form>
+ 
+          <hr>
+          <hr>
+          <br>
+ 
+          <form id="edit">
+            <h2>Actualizar Beneficiario</h2>
+            <div class="form-group">
+              <label for="edit-id">Address_Beneficiario:</label>
+              <input id="edit-address" type="text" class="form-control"></input>
+              <br>
+              <label for="edit-name">Seleccione Nuevo Estado:</label>
+              <select name="cars" id="edit-estatus">
+                <option value="Activo">Activo</option>
+                <option value="Eliminado">Eliminado</option>
+                <option value="PreActivo">PreActivo</option>
+              </select>
+              
+            </div>
+            <button onclick="actualizar(this)" type="button" class="btn btn-primary">Enviar</button>
+            
+          </form>
+ 
+          <hr>
+ 
+          
+ 
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
